@@ -38,10 +38,7 @@ function linkShutter(e) {
   }, 666);
 }
 
-//move shutter on scroll
-$(window).scroll(function(){
-  $("#shutter").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );
-});
+
 
 
 
@@ -136,3 +133,11 @@ function hideWelcome() {
 setTimeout(function () {
   hideWelcome();
 }, 1000);
+
+
+
+
+//move shutter on scroll
+$(window).scroll(function(){
+  $("#shutter").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );
+});
