@@ -300,14 +300,36 @@
 
 //smartphone width >500px
 @include mediaSm {
-  div#name>h1.name {
-    font-size: 16vw;
-    left: 4vw;
-    &.nb {
-      left: 45vw;
+  div#name {
+    height: 12vw;
+    position: static;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    h1.name {
+      position: static;
+      height: 12vw;
+      font-size: 12vw;
+      padding: 0;
+      margin: 0;
+      &.na {
+        padding-right: 5px;
+      }
+      &.nb {
+        padding: 0;
+        padding-left: 5px;
+        margin: 0;
+        height: 12vw;
+        position: static;
+        font-size: 12vw;
+      }
     }
   }
   h2.bio {
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
     font-size: 6vw;
   }
   body {
@@ -317,6 +339,9 @@
           li.nav-item {
             a {
               font-size: 10vw;
+              &.nav-link {
+                padding-bottom: 0;
+              }
             }
           }
         }
@@ -325,13 +350,6 @@
   }
   header>nav.menu>ul.menu-nav>li.nav-item>a.nav-link {
     padding-bottom: 22px;
-  }
-  div#name {
-    height: 110px;
-    h1 {
-      margin-top: 0;
-      padding-top: 10px;
-    }
   }
   ul.menu-nav {
     .menu-brand .selfie {
@@ -345,6 +363,9 @@
   }
 
   main#whyme {
+    div#name {
+      margin-top: 5vh;
+    }
     height: 170vh;
     padding: 6vw;
     h2.bio {
@@ -369,6 +390,9 @@
         width: 70%;
         margin-left: 10%;
       }
+      .icon-three i {
+        animation: rsrkt 3s linear 1s infinite;
+      }
       div.reason {
         h2.reasonTitle {
           margin-top: 3vh;
@@ -385,7 +409,7 @@
   }
 
   main#toolkit {
-    height: 110%;
+    height: 120%;
     padding: 6vw;
     div#name {
       margin-top: 3vh;
@@ -399,7 +423,7 @@
     div.toolGrid {
       width: 88vw;
       position: absolute;
-      top: 25;
+      top: 28vh;
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
         "tool-one tool-two"
@@ -440,18 +464,18 @@
   main#mywork {
     padding: 0;
     #name {
-      height: fit-content;
+      margin-top: 3vh;
       h1.name {
         margin-top: 0;
       }
     }
     h2.bio {
-      top: 8vh;
+      top: 6vh;
     }
     div#carousel {
       padding: 0;
       width: 100%;
-      margin-top: 30px;
+      margin-top: 20px;
       height: 69vh;
       top: 14vh;
       button.carouselSlider {
@@ -487,7 +511,51 @@
       div {
         margin-bottom: 1rem;
         width: 100vw;
+        font-size: 5vw;
       }
     }
   }
+
+  @keyframes rsrkt {
+    0% {
+      opacity: 0;
+      right: -22px;
+    }
+    5% {
+      opacity: .2;
+      right: -22px;
+      top: 55px;
+      transform: rotate(90deg);
+    }
+    30% {
+      opacity: 1;
+      top: -10px;
+      right: 0;
+      transform: rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      top: -20px;
+    }
+    70% {
+      opacity: 1;
+      top: -10px;
+    }
+    90% {
+      opacity: .5;
+      top: -20px;
+    }
+    100% {
+      opacity: 0;
+      right: 0;
+      transform: rotate(0deg);
+      top: -10px;
+    }
+  }
+
+
+
+
+
+
 }

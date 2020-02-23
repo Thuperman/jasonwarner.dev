@@ -38,6 +38,13 @@ function linkShutter(e) {
   }, 666);
 }
 
+//move shutter on scroll
+$(window).scroll(function(){
+  $("#shutter").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );
+});
+
+
+
 
 //select menu
 const menu = document.querySelector(".menu");

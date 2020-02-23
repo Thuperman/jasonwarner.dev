@@ -588,28 +588,50 @@
 }
 
 @media screen and (max-width: 500px) {
-  div#name > h1.name {
-    font-size: 16vw;
-    left: 4vw;
+  div#name {
+    height: 12vw;
+    position: static;
+    margin-top: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  div#name > h1.name.nb {
-    left: 45vw;
+  div#name h1.name {
+    position: static;
+    height: 12vw;
+    font-size: 12vw;
+    padding: 0;
+    margin: 0;
+  }
+  div#name h1.name.na {
+    padding-right: 5px;
+  }
+  div#name h1.name.nb {
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+    height: 12vw;
+    position: static;
+    font-size: 12vw;
   }
   h2.bio {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 6vw;
   }
   body header nav.menu ul.menu-nav li.nav-item a {
     font-size: 10vw;
   }
+  body header nav.menu ul.menu-nav li.nav-item a.nav-link {
+    padding-bottom: 0;
+  }
   header > nav.menu > ul.menu-nav > li.nav-item > a.nav-link {
     padding-bottom: 22px;
-  }
-  div#name {
-    height: 110px;
-  }
-  div#name h1 {
-    margin-top: 0;
-    padding-top: 10px;
   }
   ul.menu-nav .menu-brand .selfie {
     width: 23vh;
@@ -621,6 +643,9 @@
   main#whyme {
     height: 170vh;
     padding: 6vw;
+  }
+  main#whyme div#name {
+    margin-top: 5vh;
   }
   main#whyme h2.bio {
     top: 15vh;
@@ -641,6 +666,10 @@
     width: 70%;
     margin-left: 10%;
   }
+  main#whyme div.reasonsGrid .icon-three i {
+    -webkit-animation: rsrkt 3s linear 1s infinite;
+            animation: rsrkt 3s linear 1s infinite;
+  }
   main#whyme div.reasonsGrid div.reason h2.reasonTitle {
     margin-top: 3vh;
     font-size: 6vw;
@@ -652,7 +681,7 @@
     margin-top: 2vh;
   }
   main#toolkit {
-    height: 110%;
+    height: 120%;
     padding: 6vw;
   }
   main#toolkit div#name {
@@ -667,7 +696,7 @@
   main#toolkit div.toolGrid {
     width: 88vw;
     position: absolute;
-    top: 25;
+    top: 28vh;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "tool-one tool-two" "tool-three tool-four" "tool-five tool-six" "tool-seven tool-eight" "tool-nine tool-ten" "tool-eleven tool-twelve";
@@ -703,20 +732,18 @@
     padding: 0;
   }
   main#mywork #name {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    margin-top: 3vh;
   }
   main#mywork #name h1.name {
     margin-top: 0;
   }
   main#mywork h2.bio {
-    top: 8vh;
+    top: 6vh;
   }
   main#mywork div#carousel {
     padding: 0;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     height: 69vh;
     top: 14vh;
   }
@@ -752,6 +779,85 @@
   main#contact div.boxes div {
     margin-bottom: 1rem;
     width: 100vw;
+    font-size: 5vw;
+  }
+  @-webkit-keyframes rsrkt {
+    0% {
+      opacity: 0;
+      right: -22px;
+    }
+    5% {
+      opacity: .2;
+      right: -22px;
+      top: 55px;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    30% {
+      opacity: 1;
+      top: -10px;
+      right: 0;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      top: -20px;
+    }
+    70% {
+      opacity: 1;
+      top: -10px;
+    }
+    90% {
+      opacity: .5;
+      top: -20px;
+    }
+    100% {
+      opacity: 0;
+      right: 0;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      top: -10px;
+    }
+  }
+  @keyframes rsrkt {
+    0% {
+      opacity: 0;
+      right: -22px;
+    }
+    5% {
+      opacity: .2;
+      right: -22px;
+      top: 55px;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    30% {
+      opacity: 1;
+      top: -10px;
+      right: 0;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      top: -20px;
+    }
+    70% {
+      opacity: 1;
+      top: -10px;
+    }
+    90% {
+      opacity: .5;
+      top: -20px;
+    }
+    100% {
+      opacity: 0;
+      right: 0;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      top: -10px;
+    }
   }
 }
 /*# sourceMappingURL=mobile.css.map */
