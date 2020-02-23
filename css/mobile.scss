@@ -2,22 +2,30 @@
 
 //>1000px height
 @include maxHeight {
-  main#mywork {
-    div#name>h1.name {
-      left: 0;
-      top: 0;
-      &.nb {
-        top: 0;
-        left: 15vw;
-      }
-    }
+  main#whyme {
     h2.bio {
-      left: 44vw;
-      padding: 0;
-      top: 4.5vw;
+      top: 200px;
+    }
+    div.reasonsGrid {
+      top: 300px;
+    }
+  }
+
+  main#toolkit {
+    h2.bio {
+      top: 200px;
+    }
+    div.toolGrid {
+      top: 400px;
+    }
+  }
+  main#mywork {
+    min-height: 1050px;
+    h2.bio {
+      top: 175px;
     }
     #carousel {
-      top: 20vh;
+      top: 300px;
     }
   }
 }
@@ -80,8 +88,10 @@
   main#mywork {
     div#name>h1.name {
       left: 56px;
+      top: 50px;
       &.nb {
         left: 266px;
+        top: 50px;
       }
     }
     h2.bio {
@@ -184,7 +194,6 @@
       }
     }
   }
-
   ul.menu-nav,
   div.menu-brand {
     float: none;
@@ -206,29 +215,22 @@
       height: 24vh;
     }
   }
-  div.reasonsGrid {
-    grid-template-areas:
-      "icon-one"
-      "reason-one"
-      "icon-two"
-      "reason-two"
-      "icon-three"
-      "reason-three";
-
-    grid-template-columns: 1fr;
-  }
 
   main#toolkit{
-    div#name>h1.name.nb {
-        left: 32vw;
+    div#name>h1{
+      top: 40px;
+        &.name.nb {
+          left: 32vw;
+      }
     }
     h2.bio {
+      top: 200px;
       font-size: 5vw;
     }
     padding: 2rem;
     div.toolGrid {
       position: relative;
-      top: 25vh;
+      top: 200px;
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas:
         "tool-one tool-two tool-three"
@@ -237,32 +239,32 @@
         "tool-ten tool-eleven tool-twelve";
         row-gap: 15px;
         column-gap: 15px;
-        div.tool>img {
-          width: calc(5vw + 5vh);
-          height: auto;
-          &.tool-two {
-            max-width: 180px;
-            width: 20vw;
-            min-width: 150px;
-          }
-          &.tool-four {
-            margin-top: 0;
-            width: 15vw;
-            min-width: 100px;
-          }
-          &.tool-five {
-            min-width: 120px;
-            width: 17vw;
-          }
-          &.tool-ten {
-            width: 19vw;
-            min-width: 130px;
-          }
-          &.tool-eleven {
-            min-width: 110px;
-            width: 18vw;
-          }
+      div.tool>img {
+        width: calc(5vw + 5vh);
+        height: auto;
+        &.tool-two {
+          max-width: 180px;
+          width: 20vw;
+          min-width: 150px;
         }
+        &.tool-four {
+          margin-top: 0;
+          width: 15vw;
+          min-width: 100px;
+        }
+        &.tool-five {
+          min-width: 120px;
+          width: 17vw;
+        }
+        &.tool-ten {
+          width: 19vw;
+          min-width: 130px;
+        }
+        &.tool-eleven {
+          min-width: 110px;
+          width: 18vw;
+        }
+      }
     }
   }
 

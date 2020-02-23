@@ -339,21 +339,26 @@
 }
 
 @media screen and (max-height: 1000px) and (min-width: 1000px) {
-  main#mywork div#name > h1.name {
-    left: 0;
-    top: 0;
+  main#whyme h2.bio {
+    top: 200px;
   }
-  main#mywork div#name > h1.name.nb {
-    top: 0;
-    left: 15vw;
+  main#whyme div.reasonsGrid {
+    top: 300px;
+  }
+  main#toolkit h2.bio {
+    top: 200px;
+  }
+  main#toolkit div.toolGrid {
+    top: 400px;
+  }
+  main#mywork {
+    min-height: 1050px;
   }
   main#mywork h2.bio {
-    left: 44vw;
-    padding: 0;
-    top: 4.5vw;
+    top: 175px;
   }
   main#mywork #carousel {
-    top: 20vh;
+    top: 300px;
   }
 }
 
@@ -392,9 +397,11 @@
   }
   main#mywork div#name > h1.name {
     left: 56px;
+    top: 50px;
   }
   main#mywork div#name > h1.name.nb {
     left: 266px;
+    top: 50px;
   }
   main#mywork h2.bio {
     left: 616px;
@@ -513,23 +520,22 @@
     width: 24vh;
     height: 24vh;
   }
-  div.reasonsGrid {
-        grid-template-areas: "icon-one" "reason-one" "icon-two" "reason-two" "icon-three" "reason-three";
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
   main#toolkit {
     padding: 2rem;
+  }
+  main#toolkit div#name > h1 {
+    top: 40px;
   }
   main#toolkit div#name > h1.name.nb {
     left: 32vw;
   }
   main#toolkit h2.bio {
+    top: 200px;
     font-size: 5vw;
   }
   main#toolkit div.toolGrid {
     position: relative;
-    top: 25vh;
+    top: 200px;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "tool-one tool-two tool-three" "tool-four tool-five tool-six" "tool-seven tool-eight tool-nine" "tool-ten tool-eleven tool-twelve";
