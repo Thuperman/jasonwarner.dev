@@ -465,6 +465,7 @@
 
   main#mywork {
     padding: 0;
+    min-height: 600px;
     #name {
       margin-top: 3vh;
       h1.name {
@@ -478,10 +479,10 @@
       padding: 0;
       width: 100%;
       margin-top: 20px;
-      height: 69vh;
+      height: 65vh;
       top: 14vh;
       button.carouselSlider {
-        top: 73vh;
+        top: 70vh;
         i {
           position: relative;          
         }
@@ -494,7 +495,7 @@
       }
       div.carouselNav {
         position: absolute;
-        top: 71vh;
+        top: 68vh;
         left: 0; 
         right: 0; 
         margin-left: auto; 
@@ -522,12 +523,13 @@
     0% {
       opacity: 0;
       right: -22px;
+      transform: rotate(90deg);
     }
     5% {
       opacity: .2;
       right: -22px;
       top: 55px;
-      transform: rotate(90deg);
+
     }
     30% {
       opacity: 1;

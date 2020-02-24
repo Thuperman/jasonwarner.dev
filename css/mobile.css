@@ -736,6 +736,7 @@
   }
   main#mywork {
     padding: 0;
+    min-height: 600px;
   }
   main#mywork #name {
     margin-top: 3vh;
@@ -750,11 +751,11 @@
     padding: 0;
     width: 100%;
     margin-top: 20px;
-    height: 69vh;
+    height: 65vh;
     top: 14vh;
   }
   main#mywork div#carousel button.carouselSlider {
-    top: 73vh;
+    top: 70vh;
   }
   main#mywork div#carousel button.carouselSlider i {
     position: relative;
@@ -767,7 +768,7 @@
   }
   main#mywork div#carousel div.carouselNav {
     position: absolute;
-    top: 71vh;
+    top: 68vh;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -791,13 +792,13 @@
     0% {
       opacity: 0;
       right: -22px;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
     }
     5% {
       opacity: .2;
       right: -22px;
       top: 55px;
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
     }
     30% {
       opacity: 1;
@@ -830,13 +831,13 @@
     0% {
       opacity: 0;
       right: -22px;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
     }
     5% {
       opacity: .2;
       right: -22px;
       top: 55px;
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
     }
     30% {
       opacity: 1;
