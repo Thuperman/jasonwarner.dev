@@ -2,6 +2,12 @@
 
 //>1000px height
 @include maxHeight {
+  main#home {
+    min-height: 1000px;
+    h2.bio {
+      top: 400px;
+    }
+  }
   main#whyme {
     h2.bio {
       top: 200px;
@@ -114,6 +120,9 @@
 
 //tablet >1000px
 @include mediaMd {
+  main#home {
+    min-height: 800px;
+  }
   div#name>h1.name {
     font-size:16vw;
     left: 4vw;
@@ -151,6 +160,7 @@
     }
 
     &#whyme {
+      min-height: 1000px;
       height: 110vh;
       padding: 3vw;
       div#name {
@@ -160,9 +170,13 @@
           }
         }
       }
+      h2.bio {
+        top: 200px;
+      }
       div.reasonsGrid {
+        top: 380px;
         position: absolute;
-        top: 35vh;
+        // top: 35vh;
         margin-right: 0;
         width: 92vw;
         grid-template-areas:
@@ -269,6 +283,7 @@
   }
 
   main#mywork {
+    min-height: 1050px;
       div#name>h1.name {
         top: 0;
         &.nb {
@@ -277,11 +292,11 @@
         }
       }
       h2.bio {
-        top: 9vh;
+        top: 130px;
       }
   
     #carousel {
-      top: 24vh;
+      top: 300px;
     }
   }
 
@@ -365,6 +380,7 @@
   }
 
   main#whyme {
+    min-height: 1050px;
     div#name {
       margin-top: 5vh;
     }
@@ -411,7 +427,7 @@
   }
 
   main#toolkit {
-    height: 120%;
+    min-height:800px;
     padding: 6vw;
     div#name {
       margin-top: 3vh;

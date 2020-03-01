@@ -339,6 +339,12 @@
 }
 
 @media screen and (max-height: 1000px) and (min-width: 1000px) {
+  main#home {
+    min-height: 1000px;
+  }
+  main#home h2.bio {
+    top: 400px;
+  }
   main#whyme h2.bio {
     top: 200px;
   }
@@ -416,6 +422,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+  main#home {
+    min-height: 800px;
+  }
   div#name > h1.name {
     font-size: 16vw;
     left: 4vw;
@@ -458,15 +467,19 @@
     margin-bottom: 1rem;
   }
   main#whyme {
+    min-height: 1000px;
     height: 110vh;
     padding: 3vw;
   }
   main#whyme div#name h1.name.nb {
     left: 37vw;
   }
+  main#whyme h2.bio {
+    top: 200px;
+  }
   main#whyme div.reasonsGrid {
+    top: 380px;
     position: absolute;
-    top: 35vh;
     margin-right: 0;
     width: 92vw;
         grid-template-areas: "icon-one reason-one" "icon-two reason-two" "icon-three reason-three";
@@ -569,6 +582,9 @@
     min-width: 110px;
     width: 18vw;
   }
+  main#mywork {
+    min-height: 1050px;
+  }
   main#mywork div#name > h1.name {
     top: 0;
   }
@@ -577,10 +593,10 @@
     left: 28vw;
   }
   main#mywork h2.bio {
-    top: 9vh;
+    top: 130px;
   }
   main#mywork #carousel {
-    top: 24vh;
+    top: 300px;
   }
   main#contact div#name > h1.name.nb {
     left: 60vw;
@@ -647,6 +663,7 @@
     padding: 0;
   }
   main#whyme {
+    min-height: 1050px;
     height: 170vh;
     padding: 6vw;
   }
@@ -687,7 +704,7 @@
     margin-top: 2vh;
   }
   main#toolkit {
-    height: 120%;
+    min-height: 800px;
     padding: 6vw;
   }
   main#toolkit div#name {

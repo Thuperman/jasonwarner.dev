@@ -1353,6 +1353,7 @@ main#home div.icons .fa, main#home div.icons .fab, main#home div.icons .fad, mai
 }
 
 main#whyme {
+  min-height: 1000px;
   padding: 3vw;
 }
 
@@ -1502,6 +1503,10 @@ main#whyme div.reasonsGrid .reason-three {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: reason-three;
+}
+
+main#toolkit {
+  min-height: 1000px;
 }
 
 main#toolkit div#name {
@@ -1869,6 +1874,12 @@ footer#footer .icons a:hover {
 }
 
 @media screen and (max-height: 1000px) and (min-width: 1000px) {
+  main#home {
+    min-height: 1000px;
+  }
+  main#home h2.bio {
+    top: 400px;
+  }
   main#whyme h2.bio {
     top: 200px;
   }
@@ -1946,6 +1957,9 @@ footer#footer .icons a:hover {
 }
 
 @media screen and (max-width: 1000px) {
+  main#home {
+    min-height: 800px;
+  }
   div#name > h1.name {
     font-size: 16vw;
     left: 4vw;
@@ -1988,15 +2002,19 @@ footer#footer .icons a:hover {
     margin-bottom: 1rem;
   }
   main#whyme {
+    min-height: 1000px;
     height: 110vh;
     padding: 3vw;
   }
   main#whyme div#name h1.name.nb {
     left: 37vw;
   }
+  main#whyme h2.bio {
+    top: 200px;
+  }
   main#whyme div.reasonsGrid {
+    top: 380px;
     position: absolute;
-    top: 35vh;
     margin-right: 0;
     width: 92vw;
         grid-template-areas: "icon-one reason-one" "icon-two reason-two" "icon-three reason-three";
@@ -2099,6 +2117,9 @@ footer#footer .icons a:hover {
     min-width: 110px;
     width: 18vw;
   }
+  main#mywork {
+    min-height: 1050px;
+  }
   main#mywork div#name > h1.name {
     top: 0;
   }
@@ -2107,10 +2128,10 @@ footer#footer .icons a:hover {
     left: 28vw;
   }
   main#mywork h2.bio {
-    top: 9vh;
+    top: 130px;
   }
   main#mywork #carousel {
-    top: 24vh;
+    top: 300px;
   }
   main#contact div#name > h1.name.nb {
     left: 60vw;
@@ -2177,6 +2198,7 @@ footer#footer .icons a:hover {
     padding: 0;
   }
   main#whyme {
+    min-height: 1050px;
     height: 170vh;
     padding: 6vw;
   }
@@ -2217,7 +2239,7 @@ footer#footer .icons a:hover {
     margin-top: 2vh;
   }
   main#toolkit {
-    height: 120%;
+    min-height: 800px;
     padding: 6vw;
   }
   main#toolkit div#name {
