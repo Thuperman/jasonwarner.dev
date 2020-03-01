@@ -2,10 +2,15 @@
 
 //>1000px height
 @include maxHeight {
-  main#home {
+  body#bg-img:after {
     min-height: 1000px;
+  }
+  main#home {
     h2.bio {
       top: 400px;
+    }
+    div.icons {
+      top: 836px;
     }
   }
   main#whyme {
@@ -32,6 +37,14 @@
     }
     #carousel {
       top: 300px;
+    }
+  }
+  main#contact {
+    h2.bio {
+      top: 200px;
+    }
+    div.boxes {
+      top: 400px;
     }
   }
 }

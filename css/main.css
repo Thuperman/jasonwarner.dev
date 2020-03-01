@@ -1874,11 +1874,14 @@ footer#footer .icons a:hover {
 }
 
 @media screen and (max-height: 1000px) and (min-width: 1000px) {
-  main#home {
+  body#bg-img:after {
     min-height: 1000px;
   }
   main#home h2.bio {
     top: 400px;
+  }
+  main#home div.icons {
+    top: 836px;
   }
   main#whyme h2.bio {
     top: 200px;
@@ -1900,6 +1903,12 @@ footer#footer .icons a:hover {
   }
   main#mywork #carousel {
     top: 300px;
+  }
+  main#contact h2.bio {
+    top: 200px;
+  }
+  main#contact div.boxes {
+    top: 400px;
   }
 }
 
