@@ -134,6 +134,12 @@
 //tablet >1000px
 @include mediaMd {
   main#home {
+    min-height: initial;
+  }
+  body#bg-img:after {
+    min-height: initial;
+  }
+  main#home {
     min-height: 800px;
   }
   div#name>h1.name {
@@ -330,6 +336,12 @@
 
 //smartphone width >500px
 @include mediaSm {
+  main#home {
+    min-height: initial;
+  }
+  body#bg-img:after {
+    min-height: initial;
+  }
   div#name {
     height: 12vw;
     position: static;
@@ -393,7 +405,7 @@
   }
 
   main#whyme {
-    min-height: 1050px;
+    min-height: 1150px;
     div#name {
       margin-top: 5vh;
     }
@@ -454,7 +466,7 @@
     div.toolGrid {
       width: 88vw;
       position: absolute;
-      top: 28vh;
+      top: 30vh;
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
         "tool-one tool-two"

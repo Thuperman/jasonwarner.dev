@@ -1967,6 +1967,12 @@ footer#footer .icons a:hover {
 
 @media screen and (max-width: 1000px) {
   main#home {
+    min-height: initial;
+  }
+  body#bg-img:after {
+    min-height: initial;
+  }
+  main#home {
     min-height: 800px;
   }
   div#name > h1.name {
@@ -2154,6 +2160,12 @@ footer#footer .icons a:hover {
 }
 
 @media screen and (max-width: 500px) {
+  main#home {
+    min-height: initial;
+  }
+  body#bg-img:after {
+    min-height: initial;
+  }
   div#name {
     height: 12vw;
     position: static;
@@ -2207,7 +2219,7 @@ footer#footer .icons a:hover {
     padding: 0;
   }
   main#whyme {
-    min-height: 1050px;
+    min-height: 1150px;
     height: 170vh;
     padding: 6vw;
   }
@@ -2263,7 +2275,7 @@ footer#footer .icons a:hover {
   main#toolkit div.toolGrid {
     width: 88vw;
     position: absolute;
-    top: 28vh;
+    top: 30vh;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "tool-one tool-two" "tool-three tool-four" "tool-five tool-six" "tool-seven tool-eight" "tool-nine tool-ten" "tool-eleven tool-twelve";
